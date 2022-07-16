@@ -4,3 +4,11 @@ package golang_united_school_homework
 type Circle struct {
 	Radius float64
 }
+
+func (c Circle) CalcArea() float64 {
+	return 3.142 * c.Radius * c.Radius
+}
+
+func (c Circle) CalcPerimeter() float64 {
+	return 2 * 3.142 * c.Radius
+}
